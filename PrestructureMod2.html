@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset ="utf-8">
+		<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+		<meta name ="viewport" content = "width=device-width, initial-scale=1">
+		<title> Abhishek's Portfolio </title>
+			<!-- Adding Google Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300'
+					 rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="js/jquery1.js"></script>
+	    <script src="js/bootstrap.min.js"></script>
+
+	<!-- Modal -->
+<div class="modal fade" id="project1" tabindex="-1" role="dialog" 
+			aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" alt="kitty" src="https://placekitten.com/g/500/300">
+        This was my first project in this class. I learned a lot about HTML and CSS.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="project2" tabindex="-1" role="dialog" 
+			aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel2">Sunflower App Page</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" alt="kitty" src="https://placekitten.com/g/500/300">
+        This was my second project in this class. I learned a lot about HTML and CSS.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="project3" tabindex="-1" role="dialog"
+			 aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel3">Bokeh App Page</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" alt="kitty" src="https://placekitten.com/g/500/300">
+        This was my third project in this class. I learned a lot about HTML and CSS.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+	</head>
+	
+	<body>			
+		<div class="container"><!-- All my rows and columns are inside conatiner -->
+			<div class="row"> <!-- All my columns are inside rows-->
+				<div class="col-md-4"> <!-- All columns add up to col-md-12-->
+					<img src="https://placekitten.com/g/150/150" 
+							  alt="kitty" class ="img-responsive title-logo">	
+				</div>
+				<div class="col-md-8 text-right text-uppercase ">
+					<h1 class="text-thin title-super">Abhishek Sharma</h1>
+					<h4>Front-end ninja</h4>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<hr class="hr-fat">			
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<img src="https://placekitten.com/g/1400/600"
+							   alt="kitty" class="img-responsive">	
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12 text-uppercase">
+					<h3 class="text-muted">featured work</h3>
+				</div>
+			</div>
+			
+			<div class="row text-center">
+				<div class="col-md-4">
+			<!-- Applying modals on my images so they would pop up when clicked on-->
+					<img src="https://placekitten.com/g/500/300" class = "img-responsive"
+						 alt="Appify" data-toggle="modal" data-target="#project1">
+					<h2>APPIFY</h2>
+					<p class="text-muted">https://github.com/udacity/Appify/</p>
+				</div>
+				
+				<div class="col-md-4 ">
+					<img src="https://placekitten.com/g/500/300" class="img-responsive"
+						 alt="Sunflower" data-toggle="modal" data-target="#project2">
+					<h2>SUNFLOWER</h2>
+					<p class="text-muted">https://github.com/udacity/Sunflower/</p>
+				</div>
+				
+				<div class="col-md-4">
+					<img src="https://placekitten.com/g/500/300" class="img-responsive" 
+						alt="Bokeh" data-toggle="modal" data-target="#project3">
+					<h2>BOKEH</h2>
+					<p class="text-muted">https://github.com/udacity/Bokeh/</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
